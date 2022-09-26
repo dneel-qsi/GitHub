@@ -18,26 +18,28 @@ public class LeftOrRight
 
         // This is the work done in the detailLoop() method
         // Write your loop here.
-        while (true)
+        while (!leftOrRight.equals("X"))
         {
 System.out.println("Enter an L if you are left-handed,a R if you are right-handed or X to quit.");
-        leftOrRight  = s.nextLine();
+       leftOrRight = s.nextLine();
        
-        if (leftOrRight == "L");
-        leftTotal += 1;
+        if (leftOrRight == "L"); 
+        leftTotal += 1; 
         if (leftOrRight == "R");
-        rightTotal += 1;
-        if (leftOrRight == "X") {
-            System.out.println("Number of left-handed students: " + leftTotal);
-            System.out.println("Number of right-handed students: " + rightTotal);
-            System.exit(0);
+        rightTotal += 1; 
+        if (leftOrRight == "X"); 
+        
+      
         }
-    }    
-
+        
+        
+    
+    //  System.exit(0);
 
         // This is the work done in the endOfJob() method  
         // Output number of left or right-handed students.  
-       
+        System.out.println("Number of left-handed students: " + leftTotal +"\n");
+        System.out.println("Number of right-handed students: " + rightTotal);
     } // End of main() method.
 
 } // End of LeftOrRight class.
